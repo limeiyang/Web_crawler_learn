@@ -1,0 +1,134 @@
+/*注释方式用于控制网页显示的样式 */
+
+
+/**
+ * 注释方式
+ */
+
+
+/*1.初始化*/
+
+* {
+	/*设置外边距:设置的是：上下左右 外边距*/
+	margin: 0px;
+	/*内边距*/
+	padding: 0px;
+}
+
+
+/*2.标签选择器*/
+
+body {
+	/*导入一直图片背景:url导入 no-repeat 去除重复图片*/
+	/*background: url(../img/bg.jpg) no-repeat;*/
+	/*background-image: url(../img/bg.jpg);*/
+	/*blueviolet:系统内部颜色变量*/
+	background: blueviolet;
+	/*16进制颜色编码*/
+	/*background: #ff00ff;*/
+	/*background: rgb(23,34,100);*/
+}
+
+
+/*3.类选择器*/
+
+.piclist {
+	width: 750px;
+	height: 600px;
+	/*background: orangered;*/
+	/*设置外边距*/
+	/*第一个参数：上下间距  第二个：左右间距 auto 自适应：平方左右的间距*/
+	margin: 100px auto;
+}
+
+
+/*4.派生选择器*/
+
+.piclist span img {
+	width: 230px;
+	height: 160px;
+	/*针对于父容器或相邻标签*/
+	margin: 5px;
+}
+
+
+/*设置相框大小*/
+
+.piclist span {
+	width: 240px;
+	height: 170px;
+	background: white;
+	/*行内元素转换为块元素*/
+	display: block;
+	/*浮动*/
+	float: left;
+	margin: 5px;
+	/*设置相框的外阴影*/
+	/*第一个参数：X轴偏移量 Y轴偏移量 外阴影的大小  阴影颜色*/
+	box-shadow: 0px 0px 20px white;
+}
+
+
+/*添加鼠标悬浮触发效果*/
+
+.piclist span:hover {
+	background: red;
+}
+
+
+/*设置遮光布的大小和颜色*/
+
+
+/*ID 选择起*/
+
+#show {
+	/*设置绝对布局:重新定义标签位置：根据坐标定位*/
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	/*rgba：前三个参数：三原色编号，最后一个透明度：0全透明，1为不透明*/
+	background: rgba(0, 0, 0, 0.6);
+}
+
+
+/*修改显示大图容器*/
+
+#showimg {
+	width: 600px;
+	height: 450px;
+	background: salmon;
+	/*设置绝对布局:该容器中的坐标定义根据当前容器的左上角为（0，0）点*/
+	position: absolute;
+	left: 50%;
+	top: 150px;
+	margin-left: -300px;
+}
+
+#showimg span{
+	width: 600px;
+	height: 450px;
+	background: white;
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	
+	
+}
+#showimg span img{
+	width: 590px;
+	height: 440px;
+	margin: 5px;
+}
+
+
+.btn_01,.btn_02{
+	width: 40px;
+	height: 90px;
+	background-color: red;
+	position: absolute;
+	left: 450px;
+	top: 0px;;
+}
