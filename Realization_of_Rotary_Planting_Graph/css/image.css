@@ -27,6 +27,8 @@ body {
 	/*16进制颜色编码*/
 	/*background: #ff00ff;*/
 	/*background: rgb(23,34,100);*/
+	/*溢出隐藏（超出容器）*/
+	overflow:hidden;
 }
 
 
@@ -90,6 +92,7 @@ body {
 	height: 100%;
 	/*rgba：前三个参数：三原色编号，最后一个透明度：0全透明，1为不透明*/
 	background: rgba(0, 0, 0, 0.6);
+	display: none;
 }
 
 
@@ -104,6 +107,7 @@ body {
 	left: 50%;
 	top: 150px;
 	margin-left: -300px;
+	display: none;
 }
 
 #showimg span{
@@ -123,12 +127,71 @@ body {
 	margin: 5px;
 }
 
-
+/*两个小按钮*/
 .btn_01,.btn_02{
 	width: 40px;
 	height: 90px;
 	background-color: red;
-	position: absolute;
-	left: 450px;
-	top: 0px;;
 }
+/*添加鼠标悬浮触发效果*/
+/*.btn_01:hover {
+	background: yellow;
+}
+.btn_02:hover {
+	background: yellow;
+}
+.btn_01{
+	position: absolute;
+	left: 50%;
+	top: 310px;
+	margin-left: -450px;
+}
+.btn_02{
+	position: absolute;
+	left: 50%;
+	top: 310px;
+	margin-left: 410px;
+}
+/*箭头*/
+/*.btn_01 img{
+	float: left;
+	width: 40px;
+	height: 90px;
+}
+.btn_02 img{
+	float: left;
+	width: 40px;
+	height: 90px;
+}*/
+
+/*设置按钮*/
+.btn{
+	width: 50px;
+	height: 100px;
+	background: rgba(225,255,0,0.7);
+	/*设置绝对布局*/
+	position: absolute;
+	top:300px;
+	left:50%;
+	/*设置圆角角度*/
+	border-radius: 10px;
+	/*设置文字大小*/
+	font-size: 50px;
+	/*文字居中*/
+	text-align: center;
+	/*给定行高,解决上下居中问题*/
+	line-height: 100px;
+	/*外阴影*/
+	box-shadow: 0px 0px 20px white;
+	display: none;
+}
+/*设置第一个按钮*/
+.btn_01{
+	margin-left: -475px;
+}
+.btn_02{
+	margin-left: 425px;
+}
+
+
+
