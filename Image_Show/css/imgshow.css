@@ -1,0 +1,125 @@
+
+/*样式-初始化:Ctrl+/*/
+
+*{
+	/*设置外边距：给一个数值，设置上下左右*/
+	margin: 0px;
+	/*设置内边距：给一个数值，设置上下左右*/
+	padding: 0px;
+}
+/*【1】标签选择器*/
+body{
+	/*导入一张背景图片:通过url导入，no-repeat不重复填充*/
+	/*background: url(../img/bg.jpg) no-repeat;*/
+	/*background: darkblue;*/
+	/*background: #ff00ff;*/
+	background: rgb(20,100,200);
+	/*溢出隐藏*/
+	overflow: hidden;
+}
+/*【2】ID选择器*/
+#piclist{
+	width: 750px;
+	height: 600px;
+	/*background: salmon;*/
+	/*第一个参数：上下间距 auto 自适应*/
+	margin: 100px auto;
+}
+/*【3】派生选择器*/
+#piclist span img{
+	
+	width: 230px;
+	height: 160px;
+	/*外边距：针对父容器的距离*/
+	margin: 5px;
+}
+#piclist span{
+	width: 240px;
+	height: 170px;
+	background: white;
+	/*行内元素转换成块元素*/
+	display: block;
+	/*添加浮动效果，解决自动换行*/
+	float: left;
+	margin: 5px;
+	/*外阴影效果*/
+	/*X轴的偏移量  Y轴的偏移量  外阴影的大小 阴影的颜色*/
+	box-shadow: 0px 0px 20px white;
+}
+/*添加鼠标的悬浮效果*/
+#piclist span:hover{
+	background: red;
+}
+/*遮光布*/
+#show{
+	width: 100%;
+	height: 100%;
+	/*三原色：最后参数是透明度：0表示完全透明，1表示不透明*/
+	background: rgba(0,0,0,0.7);
+	/*绝对布局:重新定义坐标位置，根据坐标定义开始参考点的位置*/
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+}
+
+#showimg{
+	width: 600px;
+	height: 450px;
+	background: palegreen;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: 150px;
+	display: none;
+}
+/*先设置相框span的大小*/
+#showimg span{
+	width: 600px;
+	height: 450px;
+	background: white;
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+/*照片的大小*/
+#showimg span img{
+	width: 580px;
+	height: 430px;
+	margin: 10px;
+}
+/*按钮的共同属性*/
+.btn{
+	width: 50px;
+	height: 100px;
+	background: rgba(255,255,0,0.7);
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	/*圆角角度*/
+	border-radius: 10px;
+	/*文字大小*/
+	font-size: 50px;
+	/*设置文字居中属性*/
+	text-align: center;
+	/*实现上下居中*/
+	line-height: 100px;
+	/*设置字体的粗细*/
+	font-weight: bold;
+	/*设置隐藏*/
+	display: none;
+}
+.btn_01{
+	margin-left: -470px;
+}
+.btn_02{
+	margin-left: 420px;
+}
+
+
+
+
+
+
