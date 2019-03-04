@@ -58,6 +58,7 @@ for lins_01 in links:
     # 对应的网址；
     print(lins_01["href"])
     pass
+	
 # 8.通过条件查询 - 只能查询的第一个
 # <div class="list" data-value="3">教程</div>
 div_01 = soup.find_all("div",attrs={"class":"options"});
@@ -71,6 +72,8 @@ print(len(divs))
 for div_item in divs:
     print(div_item.string);
     pass
+
+
 
 
 
